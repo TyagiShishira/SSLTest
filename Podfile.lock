@@ -1,0 +1,21 @@
+PODS:
+  - OpenSSL-for-iPhone (1.1.04)
+
+DEPENDENCIES:
+  - OpenSSL-for-iPhone (from `https://github.com/bmzxd/OpenSSL-for-iPhone.git`)
+
+EXTERNAL SOURCES:
+  OpenSSL-for-iPhone:
+    :git: https://github.com/bmzxd/OpenSSL-for-iPhone.git
+
+CHECKOUT OPTIONS:
+  OpenSSL-for-iPhone:
+    :commit: 4a0ac74fab6a9a2562e28aacbcb0da91bec66f69
+    :git: https://github.com/bmzxd/OpenSSL-for-iPhone.git
+
+SPEC CHECKSUMS:
+  OpenSSL-for-iPhone: 586e8561dc9e65f256cb2ff7af8a3dcfce234bd8
+
+PODFILE CHECKSUM: 6f0e5c4f962c3838241debd1b00a772a44b39587
+
+COCOAPODS: 1.10.1

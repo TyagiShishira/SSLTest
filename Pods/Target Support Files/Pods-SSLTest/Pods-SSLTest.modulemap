@@ -1,0 +1,6 @@
+framework module Pods_SSLTest {
+  umbrella header "Pods-SSLTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

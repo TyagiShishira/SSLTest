@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E692CD68BF296B08E1F0724 /* Pods_SSLTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04715ED7BD1FBEB7DDAE090F /* Pods_SSLTest.framework */; };
 		DE5206412726EE35004B03A2 /* SSLTest.h in Headers */ = {isa = PBXBuildFile; fileRef = DE52063F2726EE35004B03A2 /* SSLTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE5206492726EE54004B03A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5206482726EE54004B03A2 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04715ED7BD1FBEB7DDAE090F /* Pods_SSLTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSLTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		100B5DBEF5AAE3E56567E228 /* Pods-SSLTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSLTest.debug.xcconfig"; path = "Target Support Files/Pods-SSLTest/Pods-SSLTest.debug.xcconfig"; sourceTree = "<group>"; };
+		A36B5F71C44CB223FD04A11A /* Pods-SSLTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSLTest.release.xcconfig"; path = "Target Support Files/Pods-SSLTest/Pods-SSLTest.release.xcconfig"; sourceTree = "<group>"; };
 		DE52063C2726EE35004B03A2 /* SSLTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSLTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE52063F2726EE35004B03A2 /* SSLTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSLTest.h; sourceTree = "<group>"; };
 		DE5206402726EE35004B03A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -23,17 +27,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E692CD68BF296B08E1F0724 /* Pods_SSLTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD2CCC9F9F0779E9BDA27F30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04715ED7BD1FBEB7DDAE090F /* Pods_SSLTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3FA074FDF8307563595F5AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				100B5DBEF5AAE3E56567E228 /* Pods-SSLTest.debug.xcconfig */,
+				A36B5F71C44CB223FD04A11A /* Pods-SSLTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DE5206322726EE35004B03A2 = {
 			isa = PBXGroup;
 			children = (
 				DE52063E2726EE35004B03A2 /* SSLTest */,
 				DE52063D2726EE35004B03A2 /* Products */,
+				C3FA074FDF8307563595F5AB /* Pods */,
+				AD2CCC9F9F0779E9BDA27F30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE5206442726EE35004B03A2 /* Build configuration list for PBXNativeTarget "SSLTest" */;
 			buildPhases = (
+				EFC97D800B4A74FB05483E2C /* [CP] Check Pods Manifest.lock */,
 				DE5206372726EE35004B03A2 /* Headers */,
 				DE5206382726EE35004B03A2 /* Sources */,
 				DE5206392726EE35004B03A2 /* Frameworks */,
@@ -128,6 +154,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EFC97D800B4A74FB05483E2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSLTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DE5206382726EE35004B03A2 /* Sources */ = {
@@ -265,6 +316,7 @@
 		};
 		DE5206452726EE35004B03A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 100B5DBEF5AAE3E56567E228 /* Pods-SSLTest.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +343,7 @@
 		};
 		DE5206462726EE35004B03A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A36B5F71C44CB223FD04A11A /* Pods-SSLTest.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
